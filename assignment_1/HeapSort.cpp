@@ -17,7 +17,7 @@ int main(){
 class HeapSort{
 
     //constructor
-    HeapSort::HeapSort(){
+        HeapSort(){
 
 
     }
