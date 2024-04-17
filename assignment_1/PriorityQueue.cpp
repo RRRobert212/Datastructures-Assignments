@@ -17,8 +17,7 @@ int main(){
 class PriorityQueue{
 
     //constructor
-
-    PriorityQueue::PriorityQueue(){
+    PriorityQueue(){
 
 
     }
