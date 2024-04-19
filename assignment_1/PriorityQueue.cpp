@@ -110,7 +110,7 @@ public:
     int peek(){
 
         if(root == nullptr){
-            cout << "ERROR, queue has no elements!\n";
+            cout << "ERROR, queue has no elements! ";
             return -1;
         }
         return root ->value;
@@ -124,7 +124,7 @@ public:
     */
 int extractMax() {
     if (root == nullptr) {
-        cout << "ERROR, queue has no elements!";
+        cout << "ERROR, queue has no elements! ";
         return -1;
     }
 
@@ -237,9 +237,9 @@ int main() {
     MaxHeap heap;
     cout << "Inserting integers into queue: \n";
     heap.insert(5);
-    heap.insert(3);
-    heap.insert(7);
     heap.insert(1);
+    heap.insert(7);
+    heap.insert(0);
     heap.insert(9);
     heap.insert(-1);
     heap.insert(112);
@@ -254,6 +254,9 @@ int main() {
     for(int i= 0; i < 7; i++){ cout << heap.extractMax() << ", ";}
     cout <<"\n";
     cout << "(it says \"-1\" because that's what extractMax() returns when the queue is empty)\n";
+    cout << "Peeking at empty queue: ";
+    cout << heap.peek();
+    cout <<"\n";
 
     return 0;
 }
