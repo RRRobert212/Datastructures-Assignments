@@ -1,5 +1,5 @@
-//BST.cpp
-//Binary search tree implementation
+//BST.cpp -Robert Donohue
+
 
 #include <stddef.h>
 #include<bits/stdc++.h>

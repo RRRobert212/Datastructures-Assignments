@@ -1,3 +1,6 @@
+//PriorityQueue.cpp -Robert Donohue
+
+
 #include <stddef.h>
 #include<bits/stdc++.h>
 using namespace std;
@@ -94,7 +97,7 @@ public:
     void heapify(HeapNode* node) {
         while (node->parent != nullptr && node->value > node->parent->value) {
 
-            //I couldn't find a simple way to do this without using the prebuilt swap function. hopefully that's allowed
+            //I'm just using the prebuilt swap function
             swap(node->value, node->parent->value);
             node = node->parent;
         }
